@@ -11,5 +11,5 @@ Instalação de dependências do projeto:
 OBS: Dependências declaradas no arquivo "package.json"
 
 Para executar o projeto:
-<npm run dev> para executar o projeto apontando para o banco de dados local.
-<npm start> para executar o projeto apontando para um banco de dados de produção.
+"npm run dev" para executar o projeto apontando para o banco de dados local.
+"npm start" para executar o projeto apontando para um banco de dados de produção.
