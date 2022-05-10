@@ -1,7 +1,7 @@
 const port = 3000
 const bodyParser = require('body-parser')
 const express = require('express')
-const server = require()
+const server = express()
 
 const queryParser = require('express-query-int')
 const allowCors = require('./cors')
@@ -12,7 +12,8 @@ server.use(queryParser());
 server.use(allowCors);
 server.use(express.static('public'));
 
-server.listen(port, fuction(){
-    console.log(`backend rodando em ${port}`)
+server.listen(port, function(){
+    console.log(`BACKEND is runner on port ${port}.`)
 })
 
+module.exports = server
