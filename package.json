@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qa-Coders/backend-api-nodejs-t7.git"
+    "url": "git+https://github.com/pedrostyxx/backend_api_nodejs.git"
   },
-  "author": "William A. da Silva",
+  "author": "Pedro Souza",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Qa-Coders/backend-api-nodejs-t7/issues"
+    "url": "https://github.com/pedrostyxx/backend_api_nodejs"
   },
-  "homepage": "https://github.com/Qa-Coders/backend-api-nodejs-t7#readme",
+  "homepage": "https://github.com/pedrostyxx/backend_api_nodejs",
   "dependencies": {
     "body-parser": "^1.20.0",
     "express": "^4.18.1",

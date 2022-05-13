@@ -1,13 +1,13 @@
 const mongoose = require('mongoose')
-const args = require('args-parser')(process.argv)
-mongoose.Promise = require('bluebird')
+const args = require("args-parser")(process.argv)
+mongoose.Promise = require("bluebird")
 
-if(args.production)
-    module.exports = mongoose.connect('mongodb+srv://admin:992455134@cluster0.ffegy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+if (args.production)
+    module.exports = mongoose.connect('mongodb://nome_banco:senha@servidor.com.br:27017/usuario' )
 else
-    module.exports = mongoose.connect('mongodb+srv://admin:992455134@cluster0.ffegy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+    module.exports = mongoose.connect('mongodb://localhost/banco_dados')    
 
-    mongoose.Error.message.general.required = "O campo '{PATH}' é obrigatório."
-    mongoose.Error.message.Number.min = "O '{PATH}' informado é menor que o limite do minimo de '{MIN}'."
-    mongoose.Error.message.general.max = "O '{PATH}' informado é maior que o limite do máximo de '{MAX}'."
-    mongoose.Error.message.general.max = "O '{VALUE}' não é valido para o campo '{PATH}'."
+mongoose.Error.messages.general.required = "O campo '{PATH}' é obrigatório."
+mongoose.Error.messages.Number.min = "O '{PATH}' informado é menor que o limite mínimo de '{MIN}'."
+mongoose.Error.messages.Number.max = "O '{PATH}' informado é maior que o limite máximo de '{MAX}'."
+mongoose.Error.messages.String.enum = "O '{VALUE}' não é válido para o campos '{PATH}'."
